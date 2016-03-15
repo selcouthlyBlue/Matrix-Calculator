@@ -23,3 +23,4 @@ getinverse (the file should also contain a square matrix)
 Notes: 
 (1) The matrix files you are going to use in this program should belong in the same folder as the "main.cpp" file. You may add your own matrix files there as well.
 (2) This is compiled using the cygwin gcc compiler.
+(3) The matrix files should not contain any unnecessary spaces or characters.
