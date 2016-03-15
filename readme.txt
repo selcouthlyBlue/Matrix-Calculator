@@ -1,6 +1,6 @@
 Author: Jerome Patrick V. Gonzalvo
 
-Matrix/Matrices Operator User Manual
+Matrix Calculator User Manual
 
 You can use this program by having one of these commands as (a) command line argument(s):
 
