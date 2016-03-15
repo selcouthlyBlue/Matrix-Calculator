@@ -20,4 +20,6 @@ transpose
 getdeterminant (the file should contain a square matrix)
 getinverse (the file should also contain a square matrix)
 
-Note: The matrix files you are going to use in this program should belong in the same folder as the "main.cpp" file.
+Notes: 
+(1) The matrix files you are going to use in this program should belong in the same folder as the "main.cpp" file. You may add your own matrix files there as well.
+(2) This is compiled using the cygwin gcc compiler.
