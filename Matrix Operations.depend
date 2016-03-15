@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1457754460 source:c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\src\matrixmultiplication.cpp
+	"MatrixMultiplication.h"
+
+1457754440 c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\include\matrixmultiplication.h
+	<vector>
+
+1458031646 source:c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<thread>
+	<windows.h>
+	"Matrix.h"
+	"UnaryMatrixOperations.h"
+	"MatrixOperations.h"
+	"LinearSystemSolver.h"
+
+1457756014 source:c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\src\matrixoperations.cpp
+	"MatrixOperations.h"
+
+1457992152 c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\include\matrixoperations.h
+	<vector>
+	<thread>
+	<iomanip>
+	<iostream>
+	<mutex>
+
+1458005025 c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\include\matrix.h
+	<vector>
+	<fstream>
+	<iostream>
+
+1458003842 c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\include\unarymatrixoperations.h
+	<vector>
+
+1458005416 source:c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\src\matrix.cpp
+	"Matrix.h"
+	"Helpers.h"
+
+1458009124 c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\include\helpers.h
+	<sstream>
+	<vector>
+	<iostream>
+	<iomanip>
+
+1458038342 c:\users\asus.11\documents\cmsc 125\lab\cpu scheduling\matrix operations\include\linearsystemsolver.h
+	<cmath>
+	<thread>
+	<mutex>
+
