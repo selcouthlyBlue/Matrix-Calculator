@@ -29,5 +29,5 @@ adjgetinverse
 
 Note:
 (1) The matrix files you are going to use in this program should belong in the same folder as the "main.cpp" file. You may add your own matrix files there as well.
-(2) It is assumed that each the files to be used in this program contain a well-formed matrix. Other than that, the file should not contain any unnecessary spaces.
+(2) It is assumed that each of the files to be used in this program contain a well-formed matrix. Other than that, the file should not contain any unnecessary spaces.
 (3) This is compiled using Cygwin GCC Compiler.
