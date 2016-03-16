@@ -49,11 +49,24 @@ void Matrix::multiplyScalarToRow(int i, float scalar)
     }
 }
 
+void Matrix::multiplyScalarToMatrix(float scalar)
+{
+    for(unsigned int i = 0; i < getNumRows(); i++)
+    {
+        multiplyScalarToRow(i, scalar);
+    }
+}
+
+void Matrix::addScalarToElement(int i, int j, float scalar)
+{
+    matrix.at(i).at(j) += scalar;
+}
+
 void Matrix::addScalarToRow(int i, float scalar)
 {
     for(unsigned int j = 0; j < getNumColumns(); j++)
     {
-        matrix.at(i).at(j) += scalar;
+        addScalarToElement(i,j,scalar);
     }
 }
 

@@ -44,6 +44,20 @@ public:
     void multiplyScalarToRow(int i, float scalar);
 
     /**
+     * @brief This function multiplies a scalar to each row
+     * @param scalar The scalar to be multiplied to each row
+     */
+    void multiplyScalarToMatrix(float scalar);
+
+    /**
+     * @brief This function adds a scalar to an element of the ith row jth column
+     * @param i The index of the row
+     * @param j The index of the column
+     * @param scalar The scalar to be added to each element of the ith row jth column
+     */
+    void addScalarToElement(int i, int j, float scalar);
+
+    /**
      * @brief This function adds a scalar to each element of the ith row
      * @param i The index of the row
      * @param scalar The scalar to be added to each element of the ith row

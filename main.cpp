@@ -25,12 +25,12 @@ void readFile(std::string filename)
 
 bool isMatrixOperation(const char argument[])
 {
-    return strcmp(argument, "addition") == 0 || strcmp(argument, "multiplication") == 0 || strcmp(argument, "solveLS") == 0;
+    return strcmp(argument, "addition") == 0 || strcmp(argument, "multiplication") == 0 || strcmp(argument, "solveLS") == 0 || strcmp(argument, "inverseSolveLS") == 0 || strcmp(argument, "adjInverseSolveLS") == 0;
 }
 
 bool isUnaryMatrixOperation(const char argument[])
 {
-    return strcmp(argument, "transpose") == 0 || strcmp(argument, "getdeterminant") == 0 || strcmp(argument, "getinverse") == 0;
+    return strcmp(argument, "transpose") == 0 || strcmp(argument, "getdeterminant") == 0 || strcmp(argument, "getinverse") == 0 || strcmp(argument, "getadjinverse") == 0;
 }
 
 int main(int argc, char *argv[])
@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
                     std::cout << "The determinant of the given matrix does not exist." << std::endl;
                 }
             }
-            else if(strcmp(argv[2], "getinverse") == 0)
+            else if(strcmp(argv[2], "getinverse") == 0 || strcmp(argv[2], "getadjinverse") == 0)
             {
                 if(!hasInverse(matrix))
                 {
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    Matrix inverseMatrix = getInverse(matrix);
+                    Matrix inverseMatrix = (strcmp(argv[2], "getinverse") == 0 ? getInverse(matrix) : adjGetInverse(matrix));
                     inverseMatrix.seeMatrix();
                 }
             }
@@ -131,8 +131,23 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    Matrix augmentedMatrix = augment(firstOperand, secondOperand);
-                    Matrix result = getREF(augmentedMatrix, true);
+                    Matrix result = GJEMSolveLS(firstOperand, secondOperand);
+                    result.seeMatrix();
+                }
+            }
+            else if(strcmp(argv[3], "inverseSolveLS") == 0 || strcmp(argv[3], "adjInverseSolveLS") == 0)
+            {
+                if(!isSolvable(firstOperand, secondOperand))
+                {
+                    std::cout << "Unable to find the solution for the given linear system parameters." << std::endl;
+                }
+                else if(!hasInverse(firstOperand))
+                {
+                    std::cout << "The linear system has no solution." << std::endl;
+                }
+                else
+                {
+                    Matrix result = inverseSolveLS(firstOperand, secondOperand, (strcmp(argv[3], "inverseSolveLS") == 0 ? false : true));
                     result.seeMatrix();
                 }
             }

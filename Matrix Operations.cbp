@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="cygwin" />
-				<Option parameters="matrix6.txt getdeterminant" />
+				<Option parameters="matrix9.txt constantMatrix1.txt adjInverseSolveLS" />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
@@ -37,9 +37,12 @@
 		<Unit filename="include/LinearSystemSolver.h" />
 		<Unit filename="include/Matrix.h" />
 		<Unit filename="include/MatrixOperations.h" />
+		<Unit filename="include/UnaryMatrixOperationNames.h" />
 		<Unit filename="include/UnaryMatrixOperations.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="matrix1.txt" />
+		<Unit filename="matrix10.txt" />
+		<Unit filename="matrix11.txt" />
 		<Unit filename="matrix2.txt" />
 		<Unit filename="matrix3.txt" />
 		<Unit filename="matrix4.txt" />
@@ -47,6 +50,7 @@
 		<Unit filename="matrix6.txt" />
 		<Unit filename="matrix7.txt" />
 		<Unit filename="matrix8.txt" />
+		<Unit filename="matrix9.txt" />
 		<Unit filename="readme.txt" />
 		<Unit filename="src/Matrix.cpp" />
 		<Extensions>
